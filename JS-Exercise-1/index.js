@@ -86,4 +86,24 @@
 
 
 
-//Task 
+//Task 5: 
+
+let n = 5;
+let string = "";
+
+for (let i = 1; i <= 2 * n - 1; i++) {
+  let spaces = i <= n ? i - 1 : 2 * n - i - 1;
+  let startK = i <= n ? i : 2 * n - i;
+
+  for (let j = 1; j <= spaces; j++) {
+    string += " ";
+  }
+  for (let k = startK; k <= n; k++) {
+    string += k + " ";
+  }
+
+  string += "\n";
+}
+
+console.log(string);
+
